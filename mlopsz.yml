@@ -1,0 +1,13 @@
+name: mlopsz
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - notebook
+  - pyarrow
+  - matplotlib
+  - seaborn
+  - scikit-learn
