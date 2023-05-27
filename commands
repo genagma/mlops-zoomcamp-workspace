@@ -1,0 +1,26 @@
+# create environment and set conda-forge like default channel
+conda creat mlopsz python=3.10
+conda deactivate
+conda activate mlopsz
+conda update --all
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda config --show-sources
+
+# create environment from yaml file
+conda env create -f environment.yml
+
+# list all the conda environment available
+conda info --envs  
+
+conda env list
+
+# Create new environment named as `envname`
+conda create --name envname
+
+# Remove environment and its dependencies
+conda remove --name mlopsz --all
+
+# Clone an existing environment
+conda create --name clone_envname --clone envname
+
