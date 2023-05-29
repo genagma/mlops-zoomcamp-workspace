@@ -11,3 +11,6 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
+  - mlflow
+  - hyperopt
+  - xgboost
