@@ -8,7 +8,7 @@ conda config --env --set channel_priority strict
 conda config --show-sources
 
 # create environment from yaml file
-conda env create -f environment.yml
+conda env create -f mlopsz.yml
 
 # list all the conda environment available
 conda info --envs  
@@ -24,3 +24,17 @@ conda remove --name mlopsz --all
 # Clone an existing environment
 conda create --name clone_envname --clone envname
 
+# List all packages installed in the environment
+conda list
+
+# Access to MLflow cli
+mlflow
+
+# Get MLflow version
+mlflow --version
+
+# Start MLflow UI
+mlflow ui
+
+# Start MLflow UI and set the backend store to use sqlite
+mlflow ui --backend-store.uri sqlite:///mlflow.db
